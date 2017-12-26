@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="theme/default/css/wb.css" />
+    <script src="theme/default/js/jquery-1.7.2.min.js"></script>
+    <script src="theme/default/js/unslider.min.js"></script>
+      <link rel="stylesheet" href="theme/default/css/slidebar.css">
+  </head>
+  {include file="inc/header.tpl"}
+<div class="content">
+            <div class="clearfix textbox">
+              <div class="left" style="float: right;">
+                <div class="Rcard2" style="margin-top: 0;height: 300px;">
+                  <p class="title clearfix">
+                    <span class="titlehead">{$ur_here}</span>
+                  </p>
+                  <!-- {if $search_list} -->
+                  <ul class="fuck2">
+                  <!-- {foreach from=$search_list item=item} -->
+                    <li>
+                      <a href="{$item.url}">
+                        <span>&gt;{$item.title}</span>
+                        <p class="cons">
+                          {$item.description}
+                        </p>
+                        <div class="Ftime">
+                          <div class="clearfix">
+                            <span class="day">{$item.click}</span>
+                          </div>
+                          <div>
+                            <span class="mounth">{$item.add_time_short}</span> 
+                          </div>
+                          
+                        </div>
+                      </a>
+                    </li>
+                    <!-- {/foreach} -->
+                  </ul>
+                  <!-- {/if} -->
+                  <p style="margin-left: 30px;margin-top: 10px;">
+                    {include file="inc/pager.tpl"}
+                  </p>
+
+                </div>
+              </div>
+              <div class="right" style="margin-left: 0;">
+                <div class="Rcard2" style="margin-top: 0;">
+                  <p class="title clearfix">
+                    <span class="titlehead">文章分类</span>
+                  </p>
+                  <!-- {if $article_category} -->
+                  <ul class="fuck">
+                    <!-- {foreach from=$article_category item=item} 一级分类 -->
+                    <li><a href="article_category.php?id={$item.cat_id}" >{$item.cat_name}</a></li>
+                    <!-- {/foreach} -->
+                  </ul>
+                  <!-- {/if} -->
+                </div>
+              </div>
+            </div>  
+    </div>
+    <script src="theme/default/js/index.js"></script>
+  {include file="inc/footeraj.tpl"}
+  </body>

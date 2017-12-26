@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*
+* @Description: index css
+* @Author: hgy:3847775@qq.com
+* @Update: (2015-12-09 18:21)
+*/
+/* CSS Document reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+ol, ul {list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a:link,a:hover{ text-decoration:none; color:#9eb2cc; }
+table {	border-collapse: collapse;border-spacing: 0;}
+.font_size14 { font-size:14px; }
+.color_orage { color:#f60;}
+
+/*welcom page*/
+.wel-bg{ background:url(wel_bg.jpg) center top no-repeat #1f6ac5; background-size:cover; font-size:16px;font-family:"Microsoft Yahei",Tahoma,Arial,SimSun; color:#333; line-height:24px;}
+.wel-container{ margin:auto; width:840px; clear:both; overflow:hidden;}
+#wel-logo{ margin-top:160px; width:840px; height:80px; background:url(LOGO.png) no-repeat;}
+.btn-wrap { margin:160px auto 0;}
+.wel-btn{ margin:20px auto; width:220px; height:49px; line-height:49px; border-radius:40px; border: solid 1px #b1cff2; display:block; text-align:center; font-size:18px; font-weight:100; clear:both; }
+a.wel-btn:link { color:#fff;}
+a.wel-btn:hover { color:#6ff;border: solid 1px #fff; }

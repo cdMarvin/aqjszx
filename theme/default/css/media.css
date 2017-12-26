@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@media screen and (min-width: 1200px) {
+	#nav .wp-menu .menu-item a.menu-link { padding: 0 17px;}   
+}
+@media screen and (max-width: 1190px) {
+	.panel-2,.panel-3 { float: none; width:auto; display:block;}
+	.panel-3 { margin-right: 0;}
+	#nav .wp-menu .menu-item a.menu-link { padding: 0 15px;}
+}
+
+@media screen and (max-width: 1020px) {
+	#nav .wp-menu .menu-item a.menu-link { padding: 0 10px;}
+}
+
+@media screen and (max-width: 1000px) {
+    #footer .inner .copyright{width:650px; padding: 15px 0; text-indent: 0; margin:0 10px;}
+    #footer .inner .share{width:250px;}
+	#nav .wp-menu .menu-item a.menu-link { padding: 0 6px;}
+}
+
+@media screen and (max-width: 960px) {
+   
+    #footer .inner .share{width:250px;}
+	#nav .wp-menu .menu-item a.menu-link { padding: 0 6px;}
+}
+
+@media screen and (max-width: 940px) {
+    #footer .inner .share{width:auto;}
+	#footer .inner .copyright { float: none; padding: 15px 0; text-align: center; margin:0 10px; height: auto; text-indent: 0;}
+	#footer .inner .share { float: none; margin:0 auto; padding-top: 2px; text-align: center;}
+	#footer .inner .share li { float: none;}
+
+	/**栏目列表**/
+	.column-menu { width: 100%; float: none; margin: 0;}
+	.column-list {float: none;}
+	.column-list .list-box { margin: 0 10px;}
+	.column-head .column-anchor {padding: 7px 10px; line-height: 28px;}
+	.column-head .column-anchor .column-switch { display: block; width: 32px; height: 28px;}
+	.col-list-wrap li a { background-position: 10px 14px;}
+	.col-list-wrap li a,.col-list-wrap li.selected a.selected { background-position: 10px 14px;}
+	.col-list-wrap li a span { padding-top: 6px; padding-bottom: 6px;}
+}
+
+@media screen and (max-width: 848px) {
+	#header .inner .header { width: 260px;}
+	.post-1 {padding: 7px 0;}
+	.panel-3 .wp-menu .menu-item { height: 24px; line-height: 24px; margin-left: 12px; font-size: 16px;}
+	#nav .wp-menu .menu-item a.menu-link { height: 24px; line-height: 24px;}
+	.post-4 {padding: 7px;}
+	.news-panel, .link-panel { width:49.98999%; }
+	.panel-8,.panel-12 { width: 100%;}
+	.link-panel .post-12 .wp-link .link-item { width: 33.31999%;}
+}
+
+@media screen and (max-width: 700px) {
+    #footer .inner .copyright{width:auto; padding: 15px 0; text-indent: 0; margin:0 10px;}
+	#header .inner .site-panel { float: none; padding: 20px 0; text-align: center;}
+	#header .inner .header { float: none; width: auto; margin:0 10px; margin-bottom: 10px; padding: 0;}
+	.panel-1,.panel-3{ display: none;}
+	.panel-2 { width: auto;}
+	.panel-2 .post-2 { width: auto; margin:0; float: none;}
+	.panel-post .post-10 { text-align: center;}
+	.panel-2 .search-title { width: 85%;}
+	.news-panel { width: 100%;}
+	.post-wrap .news-item { height: 32px; line-height: 32px; border-bottom: 1px dashed #ccc; background-position: 3px 15px;}
+	.post-wrap .news-item:hover { background-color: #DADADA; background-position: 3px -43px;}
+	.list-meta .column-title,.list-meta .column-path { float: none;}
+	.list-meta .column-title { display: block; line-height: 20px; font-size: 16px; padding-bottom: 10px; border-bottom: 2px solid #e5e5e5;}
+	.list-head { border-bottom: none;}
+}
+
+@media screen and (max-width: 640px) {
+	.link-panel { width: 100%;}
+	.link-panel .panel-post .wp-link .link-item {  width: 33.31999%;}
+	.link-panel .post-9 .wp-link .link-item { width: 100%;}
+	.info-box {margin:0 12px;}
+	.article h1.arti-title {padding:5px 0;}
+	.article .arti-metas {padding:10px 0;}
+	#footer .inner .copyright { text-align: left;}
+}
+
+@media screen and (max-width: 480px) {
+	.main-box {padding: 10px 0;}
+	.news-panel .panel-post, .link-panel .panel-post { margin:0 5px;}
+	.link-panel .panel-post .wp-link .link-item {  width: 49.9%;}
+	.link-panel .post-9 .wp-link .link-item { width: 100%;}
+	.post-head { margin-bottom: 0;}
+	.panel-2 .search-title { width: 74%;}
+	.post-wrap .event-item .item-date {width:74px;}
+	.post-wrap .event-item .item-date .date-month {font-size:18px;}
+	.post-wrap .event-item .item-date .date-day {font-size:14px;}
+	.post-wrap .event-item .item-title, .post-wrap .event-item .item-local {margin-left:82px;}
+}
+
+@media screen and (max-width: 360px) {
+	#header .inner .site-panel { margin:0 12px;}
+	#header .inner .site-panel img { width: 100%;}
+	.news-panel .panel-post, .link-panel .panel-post { margin:0;}
+	.panel-2 .search-title { width: 70%;}
+	.info-box {margin:0 8px;}
+}
+
+@media screen and (max-width: 320px) {
+    #nav .wp-menu .menu-item a.menu-link {padding: 0 5px;}
+}
+
+@media screen and (max-width: 240px) {
+	.link-panel .panel-post .wp-link .link-item {  width: 100%;}
+}

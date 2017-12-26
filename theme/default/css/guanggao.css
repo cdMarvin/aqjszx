@@ -1,0 +1,5 @@
+#img1{width:59px;height:61px;position:absolute;top:43px;left:2px;z-index:10;}
+#img1 div{width:80px;text-align:right;font-size:12px;}
+#img1 div a:link{text-decoration:none;}
+#img1 div a:hover{color:red;text-decoration:none;}
+#img1 img{width:80px;height:80px;border:1px solid black;}

@@ -1,0 +1,92 @@
+/* 代码整理：懒人之家 */
+.moko-slider {
+	MARGIN-BOTTOM: 10px;
+	OVERFLOW: hidden;
+	ZOOM: 1;
+	POSITION: relative
+}
+.moko-slider UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	OVERFLOW: hidden;
+	PADDING-TOP: 0px;
+	ZOOM: 1;
+	LIST-STYLE-TYPE: none;
+	HEIGHT: 236px
+}
+.moko-slider UL LI {
+	DISPLAY: block;
+	FLOAT: left;
+	WIDTH: 890px;
+}
+.moko-slider UL LI A {
+	DISPLAY: block
+}
+.moko-slider .frame {
+	BORDER-RIGHT: #ccc 1px solid;
+	BORDER-TOP: #ccc 1px solid;
+	OVERFLOW: hidden;
+	BORDER-LEFT: #ccc 1px solid;
+	WIDTH: 888px;
+	BORDER-BOTTOM: #ccc 1px solid
+}
+.moko-slider .point-ctrl {
+	RIGHT: 10px;
+	POSITION: absolute;
+	TOP: 195px
+}
+.moko-slider .left-point {
+	/*BACKGROUND: url(theme/default/images/ui_slider_ctrl.gif);*/
+	FILTER: alpha(opacity=70);
+	FLOAT: left;
+	WIDTH: 54px;
+	HEIGHT: 32px
+}
+.moko-slider .right-point {
+	/*BACKGROUND: url(theme/default/images/ui_slider_ctrl.gif);*/
+	FILTER: alpha(opacity=70);
+	FLOAT: left;
+	WIDTH: 54px;
+	HEIGHT: 32px
+}
+.moko-slider .left-point {
+	BACKGROUND-POSITION: 0px 0px
+}
+.moko-slider .left-point:hover {
+	BACKGROUND-POSITION: 0px -33px
+}
+.moko-slider .right-point {
+	BACKGROUND-POSITION: right 0px;
+	WIDTH: 53px
+}
+.moko-slider .right-point:hover {
+	BACKGROUND-POSITION: right -33px
+}
+.moko-slider .controller {
+	PADDING-RIGHT: 10px;
+	MARGIN: 0px;
+	/*FONT: bold 6px/1.231 arial;*/
+	OVERFLOW: hidden;
+	ZOOM: 1;
+	/*TEXT-ALIGN: right*/
+}
+.moko-slider .controller A {
+	DISPLAY: inline-block;
+	MARGIN: 0px 5px;
+	COLOR: #999;
+	LINE-HEIGHT: 24px;
+	HEIGHT: 24px;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none
+}
+.moko-slider .controller A:hover {
+	COLOR: #dedede
+}
+.moko-slider .controller .moko-slider-on {
+	COLOR: #FF9900
+}
+.moko-slider .controller .moko-slider-on:hover {
+	COLOR: #f09
+}

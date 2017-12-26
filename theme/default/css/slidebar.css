@@ -1,0 +1,142 @@
+/*侧边栏*/
+.slidebar{
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font: normal 12px/1.5em "Microsoft YaHei", "微软雅黑", simsun, Tahoma, Verdana, Lucida, Arial, Helvetica, sans-serif;
+    z-index: 99;
+}
+.slidecontrol{
+    float: left;
+    width: 36px;
+    height: 100%;
+    background-color: #20b3ff;
+    zoom: 1;
+    _text-align: center;
+}
+.controlBox{
+    position: relative;
+    top: 40%;
+}
+.uesrcenter{
+    display: block;
+    height: 36px;
+    width: 36px;
+    background: url("../images/icon.png") no-repeat -88px -60px;
+}
+.slidebarP{
+    position: absolute;
+    top: 0;
+    right: 36px;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background-color: #E4EAF0;
+    display: none;
+}
+.slidebarP:after{
+    content: '';
+    border:5px solid;
+    border-color: transparent transparent transparent #E4EAF0;
+    position: absolute;
+   right: -10px;
+  z-index: 9999;
+  top: 13px;
+}
+.slidebarP a{
+    color: #666;
+}
+.centerBox:hover{
+    background: #fe8300;
+}
+.centerBox:hover .slidebarP{
+    display: block;
+}
+
+.dindanBox{
+    position: relative;
+}
+.dindanlink{
+    display: block;
+    height: 36px;
+    width: 36px;
+    background: url("../images/icon.png") no-repeat  -328px -58px;
+}
+.dindanBox:hover{
+    background: #fe8300;
+}
+.fengxian{
+    width: 20px;
+    margin-left: 8px;
+    border-bottom: 1px #fff dashed;
+}
+.dindanBox:hover .slidebarP{
+    display: block;
+}
+.shoucICon{
+    display: block;
+    height: 2px;
+    width: 27px;
+    background: url("../images/icon.png") no-repeat -357px -33px;
+    padding-top: 31px;
+    font-size: 14px;
+    padding-left: 11px;
+    color: #fff;
+}
+.shoucBox{
+    height: 90px;
+}
+.shoucBox:hover{
+    background-color: #fe8300;
+}
+.giftBox{
+    position: relative;
+}
+.giftBox:hover{
+    background-color: #fe8300;
+}
+.giftBox:hover .slidebarP{
+    display: block;
+}
+.giftIcon{
+    display: block;
+    height: 36px;
+    width: 36px;
+    background: url("../images/icon.png") no-repeat  -177px -58px;
+}
+/*弹幕开关*/
+.danmucontrol{
+    width: 36px;
+    position: absolute;
+    bottom: 0;
+}
+
+.danmukaiguan{
+    display: block;
+    height: 91px;
+    width: 36px;
+    background: url("../images/icon.png") no-repeat 4px -88px;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.backTopBox{
+    position: relative;
+}
+.backTopBox:hover{
+    background-color: #fe8300;
+}
+.backTopBox:hover .slidebarP{
+    display: block;
+}
+.backTopIcon{
+    display: block;
+    height: 36px;
+    width: 36px;
+    background: url("../images/icon.png") no-repeat  -268px -58px;
+    margin-left: 1px;
+}

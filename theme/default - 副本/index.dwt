@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+  <head
+    <meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="theme/default/css/wb.css" />
+   <SCRIPT src="theme/default/js/fd.js" type=text/javascript charset="utf-8"></SCRIPT>
+      <link rel="stylesheet" href="theme/default/css/slidebar.css">
+	  <link rel="stylesheet" href="theme/default/css/guanggao.css">
+      <SCRIPT src="theme/default/js/8!tool1.js" type=text/javascript charset="utf-8"></SCRIPT>
+<SCRIPT src="theme/default/js/30!jui.js" type=text/javascript charset="utf-8"></SCRIPT>
+<SCRIPT src="theme/default/js/9!mokoutil.js" type=text/javascript charset="utf-8"></SCRIPT>
+<LINK href="theme/default/css/lanrenzhijia.css" type=text/css rel=stylesheet>
+<SCRIPT src="theme/default/js/lanrenzhijia.js" type=text/javascript charset="utf-8"></SCRIPT>
+  </head>
+  {include file="inc/header.tpl"}
+		<div class="content">
+            <div class="clearfix textbox">
+            	<div class="left">
+            		<div class="Lcard1 clearfix">
+            			<p class="title clearfix">
+            				<span><a class="titlehead noline" href="article_category.php?id=1">中心要闻</a></span>
+            				<a href="article_category.php?id=1" class="gt">&gt;&gt;</a>
+            			</p>
+            			<div class="banner2box" style="float: left;">
+            				<div class="banner2">
+                                <!-- {if $zxyw_article} -->
+                                <ul class="banner2Ul clearfix">
+                                    <!-- {foreach from=$zxyw_article item=item} -->
+                                    <!-- {if $item.image} -->
+			                        <li>
+			                            <a href="{$item.url}" class="unsliderLink">
+											<img src="{$item.image}" width="460" height="316">
+			                            </a>
+			                        </li>
+                                    <!-- {/if} -->
+                                    <!-- {/foreach} -->
+			                    </ul>
+                                <!-- {/if} -->
+			                    <div class="bannerleftinfo clearfix" style="padding-left: 10px;width: 440px;">
+                                    <!-- {if $zxyw_article} -->
+			                        <ol class="dots controlUl clearfix" style="float: right;">
+                                        <!-- {foreach from=$zxyw_article item=item key=key} -->
+                                        <!-- {if $item.image} -->
+			                        	<li class="dot"></li>
+                                        <!-- {/if} -->
+                                        <!-- {/foreach} -->							
+			                        </ol>
+                                    <!-- {/if} -->
+			                    </div>
+            				</div>
+            			</div>
+            			<div class="ss" id="ss">
+            				<!-- {if $zxyw_article} -->
+            				<!-- {foreach from=$zxyw_article item=item} --> 
+            				<a href="{$item.url}" class="newslink">
+	        					<span class="contents">{$item.title}</span>
+	        					<span class="times mr10">{$item.add_time|date_format:'%m.%d'}</span>
+        					</a>
+            				<!-- {/foreach} --> 
+        					<!-- {/if} -->
+            			</div>
+            		</div>
+            		<div class="Lcard1 clearfix" style="width: 890px;height:113px;margin-top:10px;">
+            			<div class=wrap>
+                            <div class=moko-slider>
+                                <div class=frame style="width:890px;height:113px;">
+                                    <ul>
+                                        <!-- {foreach from=$newshow_list item=item} -->
+                                        <li><A hideFocus title="{$item.show_name}"  href="{$item.show_link}" target=_blank><IMG src="{$item.show_img}" style="width:890px;height:113px;"></A> </li>
+                                        <!-- {/foreach} -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+            	   </div>
+                </div>
+            	<div class="right clearfix">
+            		<div class="Rcard1">
+                        <!-- {if $gsgg_article} -->
+                        <p class="title clearfix">
+                            <span><a class="titlehead noline" href="article_category.php?id=2">公示公告</a></span>
+                            <a href="article_category.php?id=2" class="gt">&gt;&gt;</a>
+                        </p>
+						<div style="overflow: hidden;height: 136px;" id="ceng1">
+    						<ul class="newsul" style="margin-top: 0px;" id="ceng2">
+                				<!-- {foreach from=$gsgg_article item=item} --> 
+                    			<a href="{$item.url}" class="newslink1 clearfix">
+                					<span class="contents1">{$item.title}</span>
+                					<span class="times1">{$item.add_time|date_format:'%m.%d'}</span>
+                				</a>
+                				<!-- {/foreach} --> 
+    						 </ul>
+							 <!-- {/if} -->
+            		    </div>
+                    </div>
+            		<div class="Rcard2" style="z-index:1">
+            			<p class="title clearfix">
+            				<span><a href="article_category.php?id=3" class="titlehead noline">培训通知</a></span>
+            				<a href="article_category.php?id=3" class="gt">&gt;&gt;</a>
+            			</p>
+            			<!-- {if $pxtz_article} -->
+						<div style="overflow: hidden;height: 136px;" id="ceng3">
+						<ul class="newsu1" style="margin-top: 0px;" id="ceng4">
+        				<!-- {foreach from=$pxtz_article item=item} --> 
+					            			<a href="{$item.url}" class="newslink1 clearfix">
+							<span class="contents1">{$item.title}</span>
+        					<!--span class="contents1">{$item.add_titletime}</span-->
+        					<span class="times1">{$item.add_time|date_format:'%m.%d'}</span>
+        				</a>
+        				<!-- {/foreach} --> 
+						</ul>
+    					<!-- {/if} -->
+					  </div>
+            		</div>
+            		<div class="Rcard3   clearfix">
+				
+            		   	<!--<div class="pso clearfix" > <img src="http://www.scaqkj.com.cn/theme/default/images/jm_11.png)" style="width:90px;height:13px;"><a href="http://www.scaqkj.com.cn/oa_login/" class="otherLink" title="中心办公OA系统"></a></div>
+						<div class="pso clearfix" ><div class="pso2" ><a href="" class="otherLink" style="background-image: url(theme/default/images/c1.png);" title="综合监督平台"></a></div><div class="pso1 clearfix"><a href="">综合监管平台</a></div></div>
+    	
+            		    <div class="pso clearfix" style="clear:both;" ><div class="pso2" style="overflow:hidden; clear:both;"><a href="http://www.scaqkj.com.cn/oa_login/" class="otherLink" style="background-image: url(theme/default/images/c4.png);margin-right: 0;" title="中心办公OA系统"></a></div><div class="pso1 clearfix"><a href="http://www.scaqkj.com.cn/oa_login/">中心办公OA系统</a></div></div>
+						<div class="pso clearfix" ><div class="pso2" ><a href="" class="otherLink" style="background-image: url(theme/default/images/c1.png);" title="综合监督平台"></a></div><div class="pso1 clearfix"><a href="">综合监管平台</a></div></div>
+                        <div class="pso clearfix"><div class="pso2" ><a href="http://125.70.227.150/mk/" class="otherLink" style="background-image: url(theme/default/images/c2.png);" title="矿用品检测系统"></a></div><div class="pso1 clearfix"><a href="http://125.70.227.150/mk/">矿用品检测系统</a></div></div>
+                        <div class="pso clearfix"><div class="pso2" ><a href="article_category.php?id=59" class="otherLink" style="background-image: url(theme/default/images/c3.png);" title="职业病危害评价公开系统"></a></div><div class="pso1 "><a href="article_category.php?id=59">职业病评价公开系统</a></div></div>
+        --> 	
+				<div class="psoss clearfix" style="clear:both;width:300px;" >
+				<ul>
+				<li class="psoss"><a href="http://www.scaqkj.com.cn/oa_login/"><img src="theme/default/images/jm_11.png" /></a></li>
+				<li class="psoss"><a href="http://202.61.88.159:8080/"><img src="theme/default/images/jm_13.jpg" /></a></li>
+				<li class="psoss"><a href="http://125.70.227.150/mk/"><img src="theme/default/images/jm_15.jpg" /></a></li>
+				<li class="psoss"><a href="http://www.scaqkj.com.cn/article_category.php?id=59"><img src="theme/default/images/jm_17.jpg" /></a></li>
+				<li class="psoss"><a href="http://qikan.cqvip.com/"><img src="theme/default/images/jm_29.jpg" /></a></li>
+				<li class="psoss"><a href="http://www.buidea.com/"><img src="theme/default/images/jm_31.jpg"  /></a></li>
+				<li class="psoss"><a href="#"><img src="theme/default/images/jm_33.jpg"  /></a></li>
+				<li class="psoss"><a href="http://182.140.197.59/"><img src="theme/default/images/jm_35.jpg"  /></a></li>
+				</ul>
+			    </div>
+            		</div>
+            	</div>
+            </div>	
+            <div class="clearfix" style="margin-left: -9px;clear:both">
+        		<div class="Lcard">
+        			<p class="title clearfix">
+        				<span><a href="article.php?id=27" class="titlehead noline">安全培训</a></span>
+        				<a href="article_category.php?id=4" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $aqpx_article} -->
+    				<!-- {foreach from=$aqpx_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+       			<div class="Lcard">
+        			<p class="title clearfix">
+        				<span><a href="article.php?id=41" class="titlehead noline">安全设备设施检测检验</a></span>
+        				<a href="article_category.php?id=5" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $aqsb_article} -->
+    				<!-- {foreach from=$aqsb_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article.php?id=42" class="titlehead noline">职业卫生技术服务</a></span>
+        				<a href="article_category.php?id=6" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $zyws_article} -->
+    				<!-- {foreach from=$zyws_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article.php?id=26" class="titlehead noline">安全社区技术支持</a></span>
+        				<a href="article_category.php?id=7" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $aqsq_article} -->
+    				<!-- {foreach from=$aqsq_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article.php?id=40" class="titlehead noline">安全技术服务</a></span>
+        				<a href="article_category.php?id=8" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $aqjs_article} -->
+    				<!-- {foreach from=$aqjs_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article.php?id=29" class="titlehead noline">司法鉴定</a></span>
+        				<a href="article_category.php?id=9" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $sfjd_article} -->
+    				<!-- {foreach from=$sfjd_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article.php?id=72" class="titlehead noline">工程质量监督</a></span>
+        				<a href="article_category.php?id=44" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $gczl_article} -->
+    				<!-- {foreach from=$gczl_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article_category.php?id=11" class="titlehead noline">政策法规</a></span>
+        				<a href="article_category.php?id=11" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $aqsc_article} -->
+    				<!-- {foreach from=$aqsc_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        		<div class="Lcard">
+        			<p class="title clearfix">
+                        <span><a href="article_category.php?id=12" class="titlehead noline">党群建设</a></span>
+        				<a href="article_category.php?id=12" class="gt">&gt;&gt;</a>
+        			</p>
+        			<!-- {if $dqjs_article} -->
+    				<!-- {foreach from=$dqjs_article item=item} --> 
+    				<a href="{$item.url}" class="newslink2 clearfix">
+    					<span class="contents2">{$item.title}</span>
+    					<span class="times">{$item.add_time|date_format:'%m.%d'}</span>
+    				</a>
+    				<!-- {/foreach} --> 
+    				<!-- {/if} -->
+        		</div>
+        	<div class="honner">
+	        		<p class="title clearfix">
+	        			<span class="titlehead">图片展示</span>
+	        		</p>
+	        		<div class="bannerhonner">
+                        <ul class="clearfix">
+                            <!-- {foreach from=$show_list item=item} -->
+		        			<li><a href="{$item.show_link}"><img src="{$item.show_img}" alt="{$item.show_name}" /></br>{$item.show_name}</a></li>
+		        			<!-- {/foreach} -->
+		        		</ul>
+	        		</div>
+            	</div>
+            	<div class="Lcard">
+        			<p class="title clearfix">
+        				<span class="titlehead">视频展示</span>
+        			</p>	
+    				<div style="margin-top: 10px;margin-left:60px">
+						<embed width="230" height="175" align="center" name="plugin" src="http://www.scaqkj.com.cn/public/images/2014050501.wmv"  autostart="false" loop="" type="video/x-ms-wmv" />
+        			</div>
+        		</div>
+                <div class="friendlink">
+                    <p class="title clearfix">
+                        <span class="titlehead">友情链接</span>
+                    </p>
+                    <div>
+                        <!-- {if $friendlink_list_a} -->
+                        <select name="a">
+                            <option value="A">上级单位</option>
+                            <!-- {foreach from=$friendlink_list_a item=item} -->
+                            <option value="{$item.show_link}">{$item.show_name}</option>
+                            <!-- {/foreach} -->
+                        </select>
+                        <!-- {/if} -->
+                        <!-- {if $friendlink_list_b} -->
+                        <select name="b">
+                            <option value="B">成员单位</option>
+                            <!-- {foreach from=$friendlink_list_b item=item} -->
+                            <option value="{$item.show_link}">{$item.show_name}</option>
+                            <!-- {/foreach} -->
+                        </select>
+                        <!-- {/if} -->
+                        <!-- {if $friendlink_list_c} -->
+                        <select name="c">
+                            <option value="C">相关链接</option>
+                            <!-- {foreach from=$friendlink_list_c item=item} -->
+                            <option value="{$item.show_link}">{$item.show_name}</option>
+                            <!-- {/foreach} -->
+                        </select>
+                        <!-- {/if} -->
+                    </div>
+                </div>
+        	</div>
+		</div>
+    <script src="theme/default/js/jquery-1.7.2.min.js"></script>
+    <script src="theme/default/js/unslider.min.js"></script>
+    <script src="theme/default/js/index.js"></script>
+	{include file="inc/footeraj.tpl"}
+</body>
+<div id="img1" onmouseover="pause_resume()" onmouseout="pause_resume()">
+<div><a href="javascript:void(0);" onclick="closediv()" title="点击关闭">关闭</a></div>
+<a href="http://202.61.88.159:8080/xwdt/365.jhtml" target="_blank"><img src="theme/default/images/akbzz.png" alt="可关闭的自由漂浮的图片广告特效代码"></a>
+</div>
+<p>可关闭的自由漂浮的图片广告特效</p>
+<script src="theme/default/js/guanggao.js"></script>
+</html>

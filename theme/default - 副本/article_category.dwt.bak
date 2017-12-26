@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="theme/default/css/wb.css" />
+    <script src="theme/default/js/jquery-1.7.2.min.js"></script>
+    <script src="theme/default/js/unslider.min.js"></script>
+    <script src="theme/default/js/index.js"></script>
+      <link rel="stylesheet" href="theme/default/css/slidebar.css">
+  </head>
+  {include file="inc/header.tpl"}
+<div class="content">
+            <div class="clearfix textbox">
+              <div class="left" style="float: right;">
+                <!-- {if $article_count} -->
+                <div class="Rcard2" style="margin-top: 0;height: 300px;">
+			                  <p class="title clearfix">
+                    <span class="titlehead">{$cate_info.cat_name}</span>
+                    <!-- <a href="" class="gt">&gt;&gt;</a> -->
+                  </p>
+                  <!-- {if $article_list} -->
+                  <ul class="fuck2">
+                  <!-- {foreach from=$article_list item=item} -->
+                    <li class="clearfix">
+                      <a href="{$item.url}">
+                        <span>{$item.title}</span>
+                        <p class="cons">
+                          {$item.description}
+                        </p>
+                        <div class="Ftime">
+                          <div class="clearfix">
+                            <span class="day">{$item.click}</span>
+                          </div>
+                   
+                          
+                        </div>
+                      </a>
+       <div>
+                            <span class="mounth">{$item.add_time_short}</span> 
+                          </div>
+                    </li>
+                    <!-- {/foreach} -->
+                  </ul>
+                  <!-- {/if} -->
+                  <p style="margin-left: 30px;margin-top: 10px;">
+                    {include file="inc/pager.tpl"}
+                  </p>
+
+                </div>
+                <!-- {else} -->
+                <div class="Rcard2" style="margin-top: 0;height: 300px;">
+                  <p class="title clearfix">
+                    <span class="titlehead">{$cate_info.cat_name}</span>
+                    <a href="" class="gt">&gt;&gt;</a>
+                  </p>
+                  <h1 style="text-align: center;margin: 10px 0;">{$article.title}</h1>
+                  <div class="contentedit"><p style="font-size: 16px;text-indent: 10px;">{$article.content}</p></div>
+                </div>
+                <!-- {/if} -->
+              </div>
+              <div class="right" style="margin-left: 0;">
+                  <!-- {if $child_list} -->
+                <div class="Rcard2" style="margin-top: 0;height: 250px;">
+                  <p class="title clearfix">
+                    <span class="titlehead">{$cate_info.cat_name}</span>
+                    <!-- <a href="" class="gt">&gt;&gt;</a> -->
+                  </p>
+                  <ul class="fuck">
+                    <!-- {foreach from=$child_list item=item key=key} -->
+                    <!-- {if $key eq $child_count} -->
+                    <li style="border-bottom: none;"><a href="article_category.php?id={$item.cat_id}" >{$item.cat_name}</a></li>
+                    <!-- {else} -->
+                    <li><a href="article_category.php?id={$item.cat_id}">{$item.cat_name}</a></li>
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                  </ul>
+                </div>
+                  <!-- {/if} -->
+                
+                <div class="Rcard1" style="margin-top: 10px;">
+                  <p class="title clearfix">
+                    <span class="titlehead">公示公告</span>
+                    <a href="article_category.php?id=2" class="gt">&gt;&gt;</a>
+                  </p>
+                  <div style="overflow: hidden;height: 136px;">
+                    <!-- {if $gsgg_article} -->
+                    <ul class="newsul" style="margin-top: 0px;">
+                      <!-- {foreach from=$gsgg_article item=item} -->
+                      <li>
+                        <a href="{$item.url}" class="newslink1 clearfix">
+                        <span class="contents1">{$item.title}</span>
+                        <span class="times1">{$item.add_time}</span>
+                      </a>
+                      </li>
+                      <!-- {/foreach} -->
+                    </ul>
+                    <!-- {/if} -->
+                </div>
+                </div>
+              </div>
+            </div>  
+    </div>
+    <div class="foot" style="margin-top: 10px;">
+			主办单位：四川省安全监管局（四川煤监局）安全技术中心&nbsp;&nbsp;&nbsp;联系地址：四川省成都市武侯区武兴四路16号 &nbsp;&nbsp;&nbsp;蜀ICP备05028571号  
+    </div>
+  </body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="theme/default/css/wb.css" />
+    <script src="theme/default/js/jquery-1.7.2.min.js"></script>
+    <script src="theme/default/js/unslider.min.js"></script>
+    <script src="theme/default/js/index.js"></script>
+      <link rel="stylesheet" href="theme/default/css/slidebar.css">
+  </head>
+  {include file="inc/header.tpl"}
+    <div class="content">
+           <div class="clearfix textbox">
+              <div>
+                <div class="Rcard2" style="margin-top: 0;height: 300px;">
+                  <p class="titlehead_navname clearfix">
+                   <span class="titlehead_icon"></span>
+                    <span class="titlehead_nav">当前位置：{$mbx}</span>
+         
+                  </p>
+
+
+                  <h1 style="text-align: center;margin: 10px 0;">{$article.title}</h1>
+                  <div class="contentedit"><p style="font-size: 16px;text-indent: 10px;">{$article.content}</p></div>
+<div class="clear h30"></div>
+             <div class="pre_next_navigation" >
+                  <li>上一篇：
+                    <!-- {if $shang_page} -->
+                    <a href="article.php?id={$shang_page.id}">{$shang_page.title|truncate:30}</a>
+                    <!-- {else} -->
+                    <span class="">没有了！！！</span>
+                    <!-- {/if} -->
+                    </li>
+                    <li>下一篇：
+                    <!-- {if $xia_page} -->
+                    <a href="article.php?id={$xia_page.id}">{$xia_page.title|truncate:36}</a>
+                    <!-- {else} -->
+                    <span >没有了！！！</span>
+                    <!-- {/if} -->
+                       </li>
+                  </div>
+                </div>
+              </div>
+            </div>  
+    </div>
+    {include file="inc/footeraj.tpl"}
+  </body>
+</html>
